@@ -1,0 +1,38 @@
+﻿$white: #fff;
+
+.t-scrollable-wrapper {
+    position: relative;
+}
+
+.t-scrollable {
+    overflow: auto;
+    
+    table {
+        z-index: 90;
+    }
+}
+
+.t-scrollable-overlay {
+    z-index: 80 !important;
+    
+    &.t-scrollable-row-headers {
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+    
+    &.t-scrollable-col-headers {
+        /*float: left;
+        z-index: 85 !important;
+        top:0;
+        left:0;*/
+    }
+}
+
+.t-scrollable-row-header {
+    pointer-events: visiblePainted;
+}
+
+table {
+    background-color: $white;
+}
